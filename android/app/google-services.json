@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "512245206475",
+    "project_id": "flutterloginusers",
+    "storage_bucket": "flutterloginusers.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:512245206475:android:fa5bfa6e28665e9e50ba4e",
+        "android_client_info": {
+          "package_name": "es.iesjandula.iseneca"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "512245206475-dk9vqmnapada25e2tspeskb1teojjiim.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnKjHBua3NxcfWLOh2Rspyg96HNgiAu6k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "512245206475-dk9vqmnapada25e2tspeskb1teojjiim.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "512245206475-lg6no9o6glbh8dihqeqs15lo1k1vk2gr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.flutterApplicationFirebaseApplication"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:512245206475:android:46c4dade059c0b5a50ba4e",
+        "android_client_info": {
+          "package_name": "es.iesjandula.login"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "512245206475-dk9vqmnapada25e2tspeskb1teojjiim.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnKjHBua3NxcfWLOh2Rspyg96HNgiAu6k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "512245206475-dk9vqmnapada25e2tspeskb1teojjiim.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "512245206475-lg6no9o6glbh8dihqeqs15lo1k1vk2gr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.flutterApplicationFirebaseApplication"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
