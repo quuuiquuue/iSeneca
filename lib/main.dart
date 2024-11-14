@@ -9,6 +9,7 @@ import 'package:iseneca/screens/convivencia/reflexion_screen.dart';
 import 'package:iseneca/screens/convivencia/screen_expulsados.dart';
 import 'package:iseneca/screens/convivencia/comportamiento_alumno_screen.dart';
 import 'package:iseneca/screens/convivencia/carnet_screen.dart';
+import 'package:iseneca/screens/incidencias/incidencia_screen.dart';
 import 'package:iseneca/screens/screens.dart';
 import 'package:iseneca/service/services.dart';
 import 'package:provider/provider.dart';
@@ -112,6 +113,7 @@ class MyApp extends StatelessWidget {
         "horario_profesores_detalles_screen": (BuildContext context) =>
             HorarioProfesoresDetallesScreen(),
         "alumnado_screen": (BuildContext context) => const AlumnadoScreen(),
+        "incidencia_Screen": (BuildContext context) => const IncidenciaFormScreen(),
         "contacto_alumnado_screen": (BuildContext context) =>
             const ContactoAlumnadoScreen(),
         "localizacion_alumnado_screen": (BuildContext context) =>
