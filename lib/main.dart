@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:iseneca/firebase_options.dart';
 import 'package:iseneca/providers/alumno_provider.dart';
+import 'package:iseneca/providers/incidencia_provider.dart';
 import 'package:iseneca/providers/providers.dart';
 
 import 'package:iseneca/screens/convivencia/incidencia_telefono_screen.dart';
@@ -78,6 +79,10 @@ class AppState extends StatelessWidget {
           create: (_) => DaceProvider(),
           lazy: false,
         ),
+        ChangeNotifierProvider(
+          create: (_) => IncidenciaProvider(),
+          lazy: false,
+        ),
       ],
       child: const MyApp(),
     );
@@ -111,9 +116,9 @@ class MyApp extends StatelessWidget {
         "horario_profesores_screen": (BuildContext context) =>
             const HorarioProfesoresScreen(),
         "horario_profesores_detalles_screen": (BuildContext context) =>
-            HorarioProfesoresDetallesScreen(),
+            const HorarioProfesoresDetallesScreen(),
         "alumnado_screen": (BuildContext context) => const AlumnadoScreen(),
-        "incidencia_Screen": (BuildContext context) => const IncidenciaFormScreen(),
+        "incidencias_screen": (BuildContext context) => const IncidenciaFormScreen(),
         "contacto_alumnado_screen": (BuildContext context) =>
             const ContactoAlumnadoScreen(),
         "localizacion_alumnado_screen": (BuildContext context) =>

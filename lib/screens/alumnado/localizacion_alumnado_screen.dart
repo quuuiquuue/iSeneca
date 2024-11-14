@@ -14,7 +14,7 @@ class LocalizacionAlumnadoScreen extends StatefulWidget {
 class _LocalizacionAlumnadoScreenState
     extends State<LocalizacionAlumnadoScreen> {
   List<DatosAlumnos> alumnosFiltrados = [];
-  TextEditingController _controller = TextEditingController();
+  final TextEditingController _controller = TextEditingController();
 
   @override
   void initState() {
@@ -295,14 +295,14 @@ void _mostrarDialogInformacionNoDisponible(BuildContext context) {
           borderRadius: BorderRadius.circular(15.0),
         ),
         backgroundColor: Colors.white,
-        title: Row(
+        title: const Row(
           children: [
-            const Icon(
+            Icon(
               Icons.error,
               color: Colors.red,
             ),
-            const SizedBox(width: 10),
-            const Expanded(
+            SizedBox(width: 10),
+            Expanded(
               child: Text(
                 'Información No Disponible',
                 style: TextStyle(color: Colors.red),

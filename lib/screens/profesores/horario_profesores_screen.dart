@@ -15,12 +15,12 @@ class _HorarioProfesoresScreenState extends State<HorarioProfesoresScreen> {
   List<Credenciales> listaOrdenadaProfesores = [];
   List<Credenciales> profesoresFiltrados = [];
   bool isLoading = false;
-  TextEditingController _controller = TextEditingController();
+  final TextEditingController _controller = TextEditingController();
 
   @override
   void initState() {
     super.initState();
-    WidgetsBinding.instance!.addPostFrameCallback((_) {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
       final credencialesProvider =
           Provider.of<CredencialesProvider>(context, listen: false);
       _fetchProfesores(credencialesProvider);

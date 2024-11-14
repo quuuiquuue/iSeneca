@@ -1219,7 +1219,7 @@ class _ComportamientoAlumnoScreenState
                           
                       },
                       style: const ButtonStyle(
-                        backgroundColor: MaterialStatePropertyAll(Colors.green)
+                        backgroundColor: WidgetStatePropertyAll(Colors.green)
                       ), child: const Text("Enviar"),
                       ),
                     ),
@@ -1234,7 +1234,7 @@ class _ComportamientoAlumnoScreenState
                         resetDefaultValues();
                       },
                       style: const ButtonStyle(
-                        backgroundColor: MaterialStatePropertyAll(Colors.red)
+                        backgroundColor: WidgetStatePropertyAll(Colors.red)
                       ), child: const Text("Borrar"),),
                     )
                   ],
@@ -1311,7 +1311,7 @@ class _ComportamientoAlumnoScreenState
     print(dateTime);
     print(currentHour);
     print(currentProfessor);
-    print(currentAlumn.nombre+" "+currentAlumn.curso);
+    print("${currentAlumn.nombre} ${currentAlumn.curso}");
     print(currentPoints);
     print(currentDerivationValue);
     print(currentTutorInformationValue);

@@ -6,6 +6,8 @@ import 'package:iseneca/providers/centro_provider.dart';
 import 'package:iseneca/models/horario_response.dart';
 
 class HorarioProfesoresDetallesScreen extends StatefulWidget {
+  const HorarioProfesoresDetallesScreen({super.key});
+
   @override
   _HorarioProfesoresDetallesScreenState createState() =>
       _HorarioProfesoresDetallesScreenState();
@@ -70,7 +72,7 @@ Widget build(BuildContext context) {
       future: _horarioFuture,
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.waiting) {
-          return Center(child: CircularProgressIndicator());
+          return const Center(child: CircularProgressIndicator());
         } else if (snapshot.hasError) {
           return Center(child: Text('Error: ${snapshot.error}'));
         }
@@ -148,7 +150,7 @@ Widget build(BuildContext context) {
   String _calcularHoraFinal(String horaInicio) {
     final formatoHora = DateFormat("HH:mm");
     DateTime horaInicial = formatoHora.parse(horaInicio);
-    DateTime horaFinal = horaInicial.add(Duration(hours: 1));
+    DateTime horaFinal = horaInicial.add(const Duration(hours: 1));
     return formatoHora.format(horaFinal);
   }
 

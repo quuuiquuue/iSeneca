@@ -88,7 +88,7 @@ class ServicioProvider extends ChangeNotifier {
             .showSnackBar(SnackBar(content: Text(message)));
       } else {
         print('Error en la solicitud: ${response.statusCode}');
-        ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+        ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
             content: Text(
                 'Error al cargar las visitas de los estudiantes al baño.')));
       }

@@ -18,7 +18,7 @@ class ServicioScreen extends StatelessWidget {
         ),
       ),
       body: ListView(
-        padding: EdgeInsets.all(10),
+        padding: const EdgeInsets.all(10),
         children: [
           GestureDetector(
             onTap: () => Navigator.pushNamed(context, "servicio_es_screen"),
@@ -27,7 +27,7 @@ class ServicioScreen extends StatelessWidget {
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(15),
               ),
-              child: ListTile(
+              child: const ListTile(
                 leading: FaIcon(FontAwesomeIcons.doorOpen,
                     color: Color.fromARGB(255, 96, 153, 199)),
                 title: Text(
@@ -38,11 +38,11 @@ class ServicioScreen extends StatelessWidget {
                   ),
                 ),
                 trailing:
-                    const Icon(Icons.arrow_forward_ios, color: Colors.blue),
+                    Icon(Icons.arrow_forward_ios, color: Colors.blue),
               ),
             ),
           ),
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
           GestureDetector(
             onTap: () =>
                 Navigator.pushNamed(context, "servicio_informes_screen"),
@@ -51,10 +51,10 @@ class ServicioScreen extends StatelessWidget {
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(15),
               ),
-              child: ListTile(
-                leading: const FaIcon(FontAwesomeIcons.solidFolder,
+              child: const ListTile(
+                leading: FaIcon(FontAwesomeIcons.solidFolder,
                     color: Color.fromARGB(255, 96, 153, 199)),
-                title: const Text(
+                title: Text(
                   'Informes',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
@@ -62,7 +62,7 @@ class ServicioScreen extends StatelessWidget {
                   ),
                 ),
                 trailing:
-                    const Icon(Icons.arrow_forward_ios, color: Colors.blue),
+                    Icon(Icons.arrow_forward_ios, color: Colors.blue),
               ),
             ),
           ),

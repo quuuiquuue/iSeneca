@@ -48,7 +48,7 @@ class _ServicioInformesDetallesScreenState
     } catch (e) {
       print('Error cargando servicios del alumno: $e');
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
+        const SnackBar(
           content: Text('Error al cargar servicios del alumno'),
           backgroundColor: Colors.red,
         ),
@@ -73,20 +73,20 @@ class _ServicioInformesDetallesScreenState
         title: Text('Historial de Visitas - $nombreAlumno'),
         backgroundColor: Colors.blue, // Fondo azul en el AppBar
         titleTextStyle:
-            TextStyle(color: Colors.white, fontSize: 20), // Texto en blanco
+            const TextStyle(color: Colors.white, fontSize: 20), // Texto en blanco
         leading: IconButton(
-          icon: Icon(Icons.arrow_back, color: Colors.white),
+          icon: const Icon(Icons.arrow_back, color: Colors.white),
           onPressed: () {
             Navigator.pop(context);
           },
         ),
       ),
       body: isLoading
-          ? Center(
+          ? const Center(
               child: CircularProgressIndicator(),
             )
           : servicios.isEmpty
-              ? Center(
+              ? const Center(
                   child: Text('No hay servicios disponibles'),
                 )
               : ListView.builder(

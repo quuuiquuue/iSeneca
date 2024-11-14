@@ -10,7 +10,7 @@ class HorarioAlumnadoScreen extends StatefulWidget {
 }
 
 class _HorarioAlumnadoScreenState extends State<HorarioAlumnadoScreen> {
-  TextEditingController _controller = TextEditingController();
+  final TextEditingController _controller = TextEditingController();
   List<String> cursosUnicos = []; // Lista original de cursos
   List<String> cursosFiltrados = []; // Lista filtrada de cursos
 

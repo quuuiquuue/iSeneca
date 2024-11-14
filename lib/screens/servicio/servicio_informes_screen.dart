@@ -22,7 +22,7 @@ class _ServicioInformesScreenState extends State<ServicioInformesScreen> {
   DateTime dateTimeFin = DateTime.now();
   int size = 0;
   int repeticiones = 0;
-  TextEditingController _controller = TextEditingController();
+  final TextEditingController _controller = TextEditingController();
   List<String> alumnosFiltrados = []; // Lista para almacenar alumnos filtrados
   late List<Servicio> servicioList = [];
   late ServicioProvider servicioProvider;
@@ -97,7 +97,7 @@ class _ServicioInformesScreenState extends State<ServicioInformesScreen> {
     });
   } catch (e) {
     ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text('Error al cargar estudiantes por fecha.')));
+      const SnackBar(content: Text('Error al cargar estudiantes por fecha.')));
     print('Failed to load students: $e');
   } finally {
     setState(() {

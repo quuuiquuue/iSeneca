@@ -116,8 +116,8 @@ class GoogleSignInState extends State<GoogleSignIn> {
               ),
               style: ButtonStyle(
                   backgroundColor:
-                      MaterialStateProperty.all<Color>(Colors.white),
-                  side: MaterialStateProperty.all<BorderSide>(BorderSide.none)),
+                      WidgetStateProperty.all<Color>(Colors.white),
+                  side: WidgetStateProperty.all<BorderSide>(BorderSide.none)),
             ),
           )
         : Container(

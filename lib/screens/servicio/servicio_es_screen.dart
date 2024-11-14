@@ -14,7 +14,7 @@ class _ServicioESScreenState extends State<ServicioESScreen> {
   late ProviderAlumno _providerAlumno;
   List<Student> listadoAlumnos = [];
   List<String> cursosUnicos = [];
-  TextEditingController _controller = TextEditingController();
+  final TextEditingController _controller = TextEditingController();
   bool _isLoading = false;
 
   @override

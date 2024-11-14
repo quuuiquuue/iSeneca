@@ -117,7 +117,7 @@ class HorarioDetallesAlumnadoScreen extends StatelessWidget {
 String _calcularHoraFinal(String horaInicio) {
   final formatoHora = DateFormat("HH:mm");
   DateTime horaInicial = formatoHora.parse(horaInicio);
-  DateTime horaFinal = horaInicial.add(Duration(hours: 1));
+  DateTime horaFinal = horaInicial.add(const Duration(hours: 1));
   return formatoHora.format(horaFinal);
 }
 

@@ -159,8 +159,8 @@ void _showHistoricoIncidencias() {
                 bool isEven = _incidenciasHistorico.indexOf(incidencia) % 2 == 0;
                 return DataRow(
                   color: isEven
-                      ? MaterialStateColor.resolveWith((states) => Colors.grey.shade200) 
-                      : MaterialStateColor.resolveWith((states) => Colors.white),
+                      ? WidgetStateColor.resolveWith((states) => Colors.grey.shade200) 
+                      : WidgetStateColor.resolveWith((states) => Colors.white),
                   cells: [
                     DataCell(Text(incidencia['fecha'] ?? '')),
                     DataCell(Text(incidencia['aula'] ?? '')),

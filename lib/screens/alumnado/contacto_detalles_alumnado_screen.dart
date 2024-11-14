@@ -16,7 +16,7 @@ class _ContactoDetallesAlumnadoScreenState
     extends State<ContactoDetallesAlumnadoScreen> {
   List<DatosAlumnos> listaAlumnos = [];
   List<DatosAlumnos> alumnosFiltrados = [];
-  TextEditingController _controller = TextEditingController();
+  final TextEditingController _controller = TextEditingController();
 
   @override
   void initState() {

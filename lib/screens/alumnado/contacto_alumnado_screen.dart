@@ -12,7 +12,7 @@ class ContactoAlumnadoScreen extends StatefulWidget {
 class _ContactoAlumnadoScreenState extends State<ContactoAlumnadoScreen> {
   List<String> cursosUnicos = [];
   List<String> cursosFiltrados = [];
-  TextEditingController _controller = TextEditingController();
+  final TextEditingController _controller = TextEditingController();
 
   @override
   void initState() {

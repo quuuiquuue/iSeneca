@@ -17,7 +17,7 @@ class _ListadoProfesoresState extends State<ListadoProfesores> {
   List<Credenciales> listaOrdenadaProfesores = [];
   List<Credenciales> profesoresFiltrados = [];
   bool isLoading = true;
-  TextEditingController _controller = TextEditingController();
+  final TextEditingController _controller = TextEditingController();
   late CentroProvider horarioProvider;
   late HorarioResponse horarioResponse = HorarioResponse(result: []);
   late HorarioResult profesorActual;
@@ -25,7 +25,7 @@ class _ListadoProfesoresState extends State<ListadoProfesores> {
   @override
   void initState() {
     super.initState();
-    WidgetsBinding.instance!.addPostFrameCallback((_) {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
       horarioProvider = Provider.of<CentroProvider>(context, listen: false);
       final credencialesProvider =
           Provider.of<CredencialesProvider>(context, listen: false);

@@ -35,8 +35,8 @@ class GoogleSignOutState extends State<GoogleSignOut> {
           icon: const FaIcon(FontAwesomeIcons.google),
           label: const Text("Log Out"),
           style: ButtonStyle(
-              backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
-              side: MaterialStateProperty.all<BorderSide>(BorderSide.none))),
+              backgroundColor: WidgetStateProperty.all<Color>(Colors.white),
+              side: WidgetStateProperty.all<BorderSide>(BorderSide.none))),
     );
   }
 }

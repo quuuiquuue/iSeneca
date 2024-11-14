@@ -17,7 +17,7 @@ class _ContactoProfesoresScreenState extends State<ContactoProfesoresScreen> {
   List<Credenciales> profesoresFiltrados = [];
 
   bool isLoading = true;
-  TextEditingController _controller = TextEditingController();
+  final TextEditingController _controller = TextEditingController();
 
   @override
   void initState() {
@@ -158,7 +158,7 @@ class _ContactoProfesoresScreenState extends State<ContactoProfesoresScreen> {
                       leading: CircleAvatar(
                         backgroundColor: Colors.blue,
                         child: Text(
-                          "${profesoresFiltrados[index].nombre[0]}",
+                          profesoresFiltrados[index].nombre[0],
                           style: const TextStyle(color: Colors.white),
                         ),
                       ),
@@ -198,7 +198,7 @@ class _ContactoProfesoresScreenState extends State<ContactoProfesoresScreen> {
             children: [
               _buildContactInfoRow(Icons.mail, "Correo: ${profesor.usuario}",
                   () => _launchEmail(profesor.usuario)),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               _buildContactInfoRow(
                   Icons.phone,
                   "Teléfono: ${profesor.telefono}",
@@ -221,13 +221,13 @@ class _ContactoProfesoresScreenState extends State<ContactoProfesoresScreen> {
     return Row(
       children: [
         Icon(icon, color: Colors.blueAccent),
-        SizedBox(width: 10),
+        const SizedBox(width: 10),
         Expanded(
           child: GestureDetector(
             onTap: onPressed,
             child: Text(
               text,
-              style: TextStyle(
+              style: const TextStyle(
                 color: Colors.black,
                 fontSize: 16,
               ),
@@ -239,26 +239,26 @@ class _ContactoProfesoresScreenState extends State<ContactoProfesoresScreen> {
   }
 
   void _launchEmail(String email) async {
-    final Uri _emailLaunchUri = Uri(
+    final Uri emailLaunchUri = Uri(
       scheme: 'mailto',
       path: email,
     );
 
-    if (await canLaunch(_emailLaunchUri.toString())) {
-      await launch(_emailLaunchUri.toString());
+    if (await canLaunch(emailLaunchUri.toString())) {
+      await launch(emailLaunchUri.toString());
     } else {
       throw 'Could not launch $email';
     }
   }
 
   void _launchPhone(String phone) async {
-    final Uri _phoneLaunchUri = Uri(
+    final Uri phoneLaunchUri = Uri(
       scheme: 'tel',
       path: phone,
     );
 
-    if (await canLaunch(_phoneLaunchUri.toString())) {
-      await launch(_phoneLaunchUri.toString());
+    if (await canLaunch(phoneLaunchUri.toString())) {
+      await launch(phoneLaunchUri.toString());
     } else {
       throw 'Could not launch $phone';
     }
