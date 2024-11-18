@@ -74,13 +74,20 @@ class _IncidenciaFormScreenState extends State<IncidenciaFormScreen> {
       return;
     }
 
-    // Agregar nueva incidencia al historial
+// Agregar nueva incidencia al historial
     setState(() {
       _incidenciasHistorico.insert(0, {
-        "fecha": DateFormat('dd/MM/yyyy').format(_selectedDate),
+        "fechaDeteccion": DateFormat('dd/MM/yyyy').format(_selectedDate),
         "descripcion": description,
         "aula": roomNumber,
         "profesor": professor,
+        "estado": "PENDIENTE", // Estado inicial de la incidencia
+        "fechaSolucion": "", // Por ahora vacío, para llenar cuando sea resuelto
+        "solucion": "", // Por ahora vacío, para llenar cuando sea resuelto
+        "finalizadaPor": "", // Por ahora vacío
+        "fechaInicio":
+            DateFormat('dd/MM/yyyy').format(_selectedDate), // Ejemplo de uso
+        "fechaFin": "", // Por ahora vacío
       });
     });
 
@@ -273,7 +280,7 @@ class _IncidenciaFormScreenState extends State<IncidenciaFormScreen> {
                     ),
                   )
                 : const Text(
-                    'No hay usuario',
+                    'Usuario sin identificarse',
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 16,
