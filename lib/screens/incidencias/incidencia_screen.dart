@@ -18,7 +18,7 @@ class _IncidenciaFormScreenState extends State<IncidenciaFormScreen> {
   // Ejemplo de datos para el historial de incidencias
   final List<Map<String, String>> _incidenciasHistorico = [
     {
-      "usuario": "profesor01", // Aquí podrías usar un valor como 'profesor01'
+      "usuario": "Paco Benitez", // Aquí podrías usar un valor como 'profesor01'
       "correo": "fbenchi274@g.educaand.es",
       "aula": "101",
       "fechaDeteccion": "01/11/2023", // Fecha de detección
@@ -32,7 +32,7 @@ class _IncidenciaFormScreenState extends State<IncidenciaFormScreen> {
       "fechaFin": "", // Si tienes fecha de fin, ponla aquí
     },
     {
-      "usuario": "profesor02",
+      "usuario": "Paco Benitez",
       "correo": "fbenchi274@g.educaand.es",
       "aula": "202",
       "fechaDeteccion": "15/10/2023",
@@ -45,7 +45,7 @@ class _IncidenciaFormScreenState extends State<IncidenciaFormScreen> {
       "fechaFin": "",
     },
     {
-      "usuario": "profesor03",
+      "usuario": "Paco Benitez",
       "correo": "fbenchi274@g.educaand.es",
       "aula": "303",
       "fechaDeteccion": "05/10/2023",
